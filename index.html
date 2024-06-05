@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio final</title>
+</head>
+<body>
+    <header class="bg-dark d-flex justify-content-between">
+      <h1 class="text-light m-1">MasterD</h1>
+      <nav class="navbar">
+        <ul class="d-flex">
+          <li><a class="text-light m-5" href="#">Inicio</a></li>
+          <li><a class="text-light m-5" href="#">Acerca de</a></li>
+          <li><a class="text-light m-5" href="#">Contacto</a></li>
+        </ul>
+      </nav>    
+    </header>
+        
+    <main class="w-100">
+      <div id="carrusel" class="w-75 mt-2">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/carrusel1.jpg" class="d-block w-100" alt="Imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/carrusel2.jpg" class="d-block w-100" alt="Imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/carrusel3.jpg" class="d-block w-100" alt="Imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/carrusel4.jpg" class="d-block w-100" alt="Imagen">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container d-flex mt-5 w-75">
+
+        <div class="col-6">
+          <h2>Presupuesto</h2>       
+            <form>
+              <label>Nombre:</label><br>
+              <input class="w-100" type="text"  name="nombre" id="nombre" required>
+              
+              <label>Apellido:</label><br>
+              <input class="w-100" type="text" id="apellido">
+                
+              <label>Correo:</label><br>
+              <input class="w-100" type="email" id="correo">
+              
+              <label>Teléfono:</label><br>
+              <input class="w-100" type="tel" id="telefono">
+                
+              <label>Tipo de trabajo</label><br>
+              <select class="w-100" id ="base">
+                <option>Elige una opción</option>
+                <option>HTML básico 1000€</option>
+                <option>Diseño avanzado 1400€</option>
+                <option>Panel de administración 2500€</option>
+              </select><br>
+              
+              <label>Plazo en meses:</label><br>
+              <input class="w-100" type="number" min="0" id="plazo">
+
+              <!--CHECKBOX-->
+              <div>
+                <input type="checkbox" id="galeria">
+                <label class="col-6">Galería</label>
+            
+                <input type="checkbox" id="formulario" >
+                <label>Formulario de presupuesto</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="ecom" >
+                <label class="col-6">Tienda</label>
+            
+                <input type="checkbox" id="redes">
+                <label>Redes sociales</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" id="localiz">
+                <label class="col-6">Mapa localización interactivo</label>
+            
+                <input type="checkbox" id="soporteweb">
+                <label>Soporte Web</label>
+              </div>
+              
+              <!--XXXXXXXXXXXXXXXXXXXX-->
+              <label>Presupuesto estimado:</label><br>
+              <input class="w-100" type="text" id="total"><br>
+              
+              <input type="checkbox" id="privacidad"> 
+              <label>He leido la política de privacidad</label>
+              <br>
+                  
+              <button class="btn btn-primary mt-2" type="submit">Enviar datos</button>
+            </form>
+        </div>
+
+        <!--NOTICIAS-->
+        <div class="col-6">
+          <div class="row justify-content-around">
+              <div class="card col-5">
+                <img src="assets/images/noticia1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Redes Sociales</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+              <div class="card col-5">
+                <img src="assets/images/noticia2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Soporte Web</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-around mt-3">
+              <div class="card col-5">
+                <img src="assets/images/noticia3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diseño</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+              <div class="card col-5">
+                <img src="assets/images/noticia4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tienda Online</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+    </main>
+    
+    <footer class="bg-dark text-light d-flex justify-content-around mt-5">
+      <div class="text-center m-3">
+        <h3>Footer content</h3>
+        <p>You can use rows and columns here to organize you footer content.</p>
+      </div>
+
+      <div class="text-center m-3">
+        <h3 class="text-center">Links</h3>
+        <ul>
+          <li><a class="text-white text-center" href="#">Home</a></li>
+          <li><a class="text-white text-center" href="#">Portafolios</a></li>
+          <li><a class="text-white text-center" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+    
+</body>
+</html>
